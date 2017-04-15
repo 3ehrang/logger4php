@@ -1,0 +1,23 @@
+{
+    "name": "i3ehrang/logger4php",
+    "description": "Add log4php in Laravel",
+    "license": "MIT",
+    "keywords": ["laravel", "log4php", "apache", "log"],
+    "authors": [
+        {
+            "name": "Behrang No",
+            "email": "3ehrang@gmail.com"
+        }
+    ],
+    "require": {
+    	"apache/log4php": "2.3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.0.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "I3ehrang\\Logger4php\\": "src/"
+        }
+    }
+}
