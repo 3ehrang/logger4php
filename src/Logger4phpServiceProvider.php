@@ -30,12 +30,7 @@ class Logger4phpServiceProvider extends ServiceProvider {
 	        return new Logger4php();
 	    }); */
         $this->app->bind('Logger4php', function(){
-            return Logger4php::getInstance(
-                    Config::get('logger4php.path'),
-                    Config::get('logger4php.name'),
-                    Config::get('logger4php.bind'),
-                    Config::get('logger4php.formatter')
-            );
+            return new Logger4php();
         });
 	}
    

@@ -41,15 +41,14 @@ Copy the config file from vendor into your project and change it as your own
 \vendor\i3ehrang\logger4php\src\config\logger4php.php
 ```
 
-##### Optional: Change `\vendor\i3ehrang\logger4php\src\log4php.xml` based on [Log4php Config Package] Doc
+##### Optional: copy `\vendor\i3ehrang\logger4php\src\log4php.xml` to your app\config for customize.
 
 # Usage
 ```php
-use I3ehrang\Logger4php\Facades\Logger4php;
+use Logger4php;
 
-Logger4php::addParam('userId', '23')
-    ->addParam('userName', 'Behrang')
-    ->info('USER_LOGIN');
+Logger4php::setParams(['user' => 'John', 'id' => '1'])
+    ->info();
 
 ```
 
