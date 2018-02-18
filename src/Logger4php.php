@@ -41,13 +41,13 @@ class Logger4php
         }
         
         // add file output path to config
-        $file = $_ENV['LOGGER4PHP_FILE'];
+        $file = env('LOGGER4PHP_FILE');
         $config['appenders']['default']['params']['file'] = $file;
     
         Logger::configure($config);
     
         // add logger name
-        $name = $_ENV['LOGGER4PHP_NAME'];
+        $name = env('LOGGER4PHP_NAME');
         
         // set default output
         $this->setOutput(new JsonOutput());
